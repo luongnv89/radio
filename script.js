@@ -231,6 +231,7 @@ luongnvinfo={
 	],
 	doFirst:function () {
 		audioplayer = document.getElementById('audioplayer');
+		audioplayer.volume=0.5;
 		btnPlay = document.getElementById('btnPlay');
 		rsName = document.getElementById('radioName');
 		rsDesc = document.getElementById('rs-description');
@@ -239,6 +240,11 @@ luongnvinfo={
 		rsN = document.getElementById('nextName');
 		btnNext = document.getElementById('btnNext');
 		btnTime = document.getElementById('btnTime');
+		rsVolume = document.getElementById('volume');
+		rsVolume.value = audioplayer.volume*100;
+		rsVolume.addEventListener('change',luongnvinfo.setVolume,false);
+		volumeValue = document.getElementById('volumeValue');
+		volumeValue.innerHTML = rsVolume.value/10;
 		btnTime.onclick=function () {
 			var time = prompt('Set time to stop (minutes)',10);
 			if(time<0&&!(time instanceof Number)){
@@ -365,8 +371,11 @@ luongnvinfo={
 			luongnvinfo.selectStream(index);
 		}; 
 		return col;
+	},
+	setVolume :function () {
+		audioplayer.volume=rsVolume.value/100;
+		volumeValue.innerHTML = rsVolume.value/10;
 	}
-
 }
 
 document.addEventListener('DOMContentLoaded',luongnvinfo.doFirst,false);
