@@ -1,0 +1,203 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <!-- End Bootstrap 3.2.0 -->
+  <style type="text/css">
+    h1{
+      font:bold 30px Tahoma;
+    }
+    header, section, footer, aside, nav, article, hgroup{
+      display:block;
+    }
+    body{
+      width:90%;
+      display:-webkit-box;
+      display:-moz-box;
+      -webkit-box-pack:center;
+      -moz-box-pack:center;
+    }
+    #big_wrapper{
+      max-width:1000px;
+      margin:10px 0px;
+      display:-webkit-box;
+      display:-moz-box;
+      -webkit-box-orient: vertical;
+      -moz-box-orient: vertical;
+      -webkit-box-flex:1;
+      -moz-box-flex:1;
+    }
+    #top_header{
+      padding: 10px;
+      margin-left: 10px;
+    }
+
+    #the_footer{
+      text-align:center;
+      border-top:1px solid green;
+    }
+
+    .link_icon{
+      width: 32px;
+      margin: 5px;
+    }
+
+    #main-contain{
+      display:-webkit-box;
+      display:-moz-box;
+      -webkit-box-orient:vertical;
+      -moz-box-orient:vertical;
+      margin-top: 80px;
+    }
+    
+    .thumbnail{
+      text-align: center;
+    }
+
+    .thumb-image{
+      width: 100px;
+      height: 100px;
+    }
+
+    .btn-view-detail{
+      width: 100%;
+    }
+    #audioplayer{
+      width:100%;
+      margin-bottom:10px;
+    }
+    #channelName{
+      width:100%;
+      font-weight: bold;
+      margin-bottom:10px;
+    }
+    #radioplay{
+      position: fixed; 
+      z-index: 10000;
+      padding-top: 3px;
+      opacity: 0.8;
+      margin-left: 10px;
+      width: 100%;
+    }
+  </style>
+  <title>Nguyen Van Luong | Software Engineer</title>
+  <link rel="shortcut icon" href="icon.ico">
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-51957988-2', 'luongnv.info');
+    ga('send', 'pageview');
+  </script>
+</head>
+<body>
+
+  <!--Main body --> 
+  <div id='big_wrapper'>
+
+    <!--Header -->
+    <div class="page-header">
+      <h1><a href="http://luongnv.info">Nguyen Van Luong</a> <small>Radio Online</small></h1>
+    </div>
+    <!--Main contain -->
+     <div id="radioplay">
+      <audio id="audioplayer" preload="true" autoplay ="true" controls="" src="http://bbcwssc.ic.llnwd.net/stream/bbcwssc_mp1_ws-eieuk"></audio>
+      <div style="width:100%;" align="center">
+        Current radio:<span id="channelName">BBC World Service</span>
+      </div>
+    </div>
+    <div class="container bs-docs-container" id='main-contain'>
+      <script type="text/javascript">
+        audioplayer = document.getElementById('audioplayer');
+        channelName = document.getElementById('channelName');
+      </script>
+      <div class="row">
+        <!--BBC radio -->
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="../images/bbc.jpg" class="thumb-image" onclick="audioplayer.src = 'http://bbcwssc.ic.llnwd.net/stream/bbcwssc_mp1_ws-eieuk';channelName.innerHTML='BBC World Service';">
+            <div class="caption">
+              <h3>BBC World Service</h3>
+            </div>
+          </div>
+        </div>
+
+        <!--Jazzfm -->
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="../images/jazzfm.jpg" class="thumb-image" onclick="audioplayer.src = 'http://listen.onmyradio.net:8002/;';channelName.innerHTML='Jazz FM';" title="Click to play">
+            <div class="caption">
+              <h3>Jazz FM</h3>
+            </div>
+          </div>
+        </div>
+        <!--Classic FM-->
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail" >
+            <img src="../images/classicfm.gif" class="thumb-image" onclick="audioplayer.src = 'http://media-ice.musicradio.com:80/ClassicFMMP3';channelName.innerHTML='Classic FM';" title="Click to play">
+            <div class="caption">
+              <h3>Classic FM</h3>
+            </div>
+          </div>
+        </div>
+        <!--Radio New Yok-->
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="../images/ny.jpg" class="thumb-image" onclick="audioplayer.src = 'http://newyorkcity.radiostreamlive.com:8014/radionylive_128';channelName.innerHTML='Radio New Yok';" title="Click to play">
+            <div class="caption">
+              <h3>Radio New Yok</h3>
+            </div>
+          </div>
+        </div>
+
+        <!--Junior-->
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="../images/junior.jpg" class="thumb-image" onclick="audioplayer.src = 'http://91.121.62.121:8080/;';channelName.innerHTML='Junior Radio';">
+            <div class="caption" title="Click to play">
+              <h3>Junior Radio</h3>
+            </div>
+          </div>
+        </div>
+        <!--HOTMIX Dance-->
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="../images/hotmix.jpg" class="thumb-image" onclick="audioplayer.src = 'http://streaming.hotmix-radio.net/hotmixradio-dance-128.mp3';channelName.innerHTML='Hotmix Dance';" title="Click to play">
+            <div class="caption">
+              <h3>Hotmix Dance</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End of main contain -->
+    </div>
+    <!--Footer -->
+    <footer id='the_footer'>
+      <div id='social_network'>
+        Find me on - <!-- Place this code where you want the badge to render. -->
+        <a href="//plus.google.com/u/0/109877517435577683455?prsrc=3"
+        rel="publisher" target="_top" style="text-decoration:none;">
+        <img src="//ssl.gstatic.com/images/icons/gplus-32.png" alt="Google+" style="border:0;width:32px;height:32px;"/>
+      </a>
+      <a href="http://fr.linkedin.com/in/luongnv"><img src="../images/linkedin.png" class='link_icon'></a>
+      <a href="https://www.facebook.com/luongnv89"><img src="../images/facebook.png" class='link_icon'></a>
+      <a href="https://twitter.com/luongnv89"><img src="../images/twitter.png" class='link_icon'></a>
+    </div>
+    Nguyen Van Luong - <a href="http://luongnv.info">http://luongnv.info</a> - <a href="mailto: luongnv89@gmail.com">luongnv89@gmail.com</a>
+  </footer>
+  <!-- End of main body -->
+</div>
+</body>
+</html>

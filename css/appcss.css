@@ -1,0 +1,65 @@
+h1{
+      font:bold 30px Tahoma;
+    }
+    header, section, footer, aside, nav, article, hgroup{
+      display:block;
+    }
+    body{
+      /*width:100%;*/
+      display:-webkit-box;
+      display:-moz-box;
+      -webkit-box-pack:center;
+      -moz-box-pack:center;
+    }
+    #big_wrapper{
+      max-width:1000px;
+      margin:10px 0px;
+      display:-webkit-box;
+      display:-moz-box;
+      -webkit-box-orient: vertical;
+      -moz-box-orient: vertical;
+      -webkit-box-flex:1;
+      -moz-box-flex:1;
+    }
+    #top_header{
+      padding: 10px;
+      margin-left: 10px;
+    }
+
+    #the_footer{
+      text-align:center;
+    }
+
+    .link_icon{
+      width: 32px;
+      margin: 5px;
+    }
+
+   /* img:hover{
+      -webkit-filter: grayscale(0%);
+      -moz-filter: grayscale(0%);
+      filter: grayscale(0%);
+    }
+
+    img{
+      -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+      filter: grayscale(100%);
+    }*/
+
+    #main-contain{
+      margin-top: 10px;
+      display:-webkit-box;
+      display:-moz-box;
+      -webkit-box-orient:vertical;
+      -moz-box-orient:vertical;
+    }
+    
+    .thumbnail{
+      text-align: center;
+    }
+
+    .thumb-image{
+      width: 100px;
+      height: 100px;
+    }
