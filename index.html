@@ -17,7 +17,6 @@
   <link rel="stylesheet" type="text/css" href="css/hover-min.css">
   <link rel="stylesheet" type="text/css" href="css/appcss.css">
   <style type="text/css">
-
     #rs-description{
       width: 100%;
       margin: 10px;
@@ -26,6 +25,11 @@
     }
     #myModal{
       width: 100%;
+    }
+
+    #currentLogo{
+      width:150px;
+      height:150px;
     }
   </style>
   <title>Nguyen Van Luong | luongnv89@gmail.com</title>
@@ -77,10 +81,10 @@
         <img src="images/stop.png" id = "btnPlay" class="grow" style="margin:3px;" title="Pause/Play">
         <img src="images/next.png" alt="Next" id="btnNext" style="margin:3px;" class="grow" title="Next Channels">
         <span id="nextName" class="hidden-xs" style="margin:3px;">Next Radio Station</span>
-        <input id="volume" type="range" min="0" max="100" value="50" step="10" style="width:100px;display:inline"></input>
-        <span id="volumeValue"></span> 
          <img class="grow" onclick="window.location ='index-full.html';" style="float:right;" src="images/change.png" title="Change to full version">
          <img src="images/time.png" alt="Set timeout" id="btnTime" style="margin:3px;float:right;" class="grow" title="Set time to stop listening">
+         <input id="volume" type="range" min="0" max="100" value="50" step="10"></input>
+        <span id="volumeValue"></span> 
       </div>
       <!--End of main contain -->
     </div>

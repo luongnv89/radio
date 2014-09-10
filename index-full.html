@@ -18,7 +18,13 @@
   <link rel="stylesheet" type="text/css" href="css/appcss.css">
   <style type="text/css">
     .page-header{
-      margin-top: 80px;
+      margin-top: 100px;
+    }
+
+    #radioplay{
+      position: fixed;
+      top: 0;
+      left: 0;
     }
   </style>
   <title>Nguyen Van Luong | Software Engineer</title>
@@ -44,18 +50,16 @@
             Your browser does not support "audio" tag!
           </audio>
           <span id="radioName">BBC World Service</span>
-
+          <img class="grow" onclick="window.location ='.';" style="float:right;" src="images/change.png" title="Change to simple version">  
+          <img src="images/time.png" alt="Set timeout" id="btnTime" style="margin:3px;float:right;" class="grow" title="Set time to stop listening">
           <div>  
           <span id="previousName" class="hidden-xs" style="margin:3px;">Previous Radio Station</span> 
           <img src="images/previous.png" alt="Previous" id="btnPrevious" style="margin:3px;" class="grow" title="Previous Channel">
           <img src="images/stop.png" id = "btnPlay" class="grow" style="margin:3px;" title="Pause/Play">
           <img src="images/next.png" alt="Next" id="btnNext" style="margin:3px;" class="grow" title="Next Channels">
           <span id="nextName" class="hidden-xs" style="margin:3px;">Next Radio Station</span>
-          <input id="volume" type="range" min="0" max="100" value="50" step="10" style="width:100px;display:inline"></input>
+          <input id="volume" type="range" min="0" max="100" value="50" step="10"></input>
           <span id="volumeValue"></span>
-          <img class="grow" onclick="window.location ='.';" style="float:right;" src="images/change.png" title="Change to simple version">  
-          <img src="images/time.png" alt="Set timeout" id="btnTime" style="margin:3px;float:right;" class="grow" title="Set time to stop listening">
-          
          </div>
       </div>
     <!--Header -->
