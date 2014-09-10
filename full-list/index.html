@@ -13,12 +13,12 @@
   <!-- Latest compiled and minified JavaScript -->
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   <!-- End Bootstrap 3.2.0 -->
-  <script type="text/javascript" src="radio.js"></script>
+  <script type="text/javascript" src="../script.js"></script>
   <link rel="stylesheet" type="text/css" href="../css/hover-min.css">
   <link rel="stylesheet" type="text/css" href="../css/appcss.css">
   <style type="text/css">
     .page-header{
-      margin-top: 60px;
+      margin-top: 80px;
     }
 
     #channelName{
@@ -65,6 +65,11 @@
     #main-contain{
       margin-top: 0px;
     }
+    #radioName{
+      font-size: 20px;
+      font-family: 'Comic Sans MS';
+      font-weight: bold;
+    }
   </style>
   <title>Nguyen Van Luong | Software Engineer</title>
   <link rel="shortcut icon" href="icon.ico">
@@ -78,15 +83,22 @@
   ga('send', 'pageview');
 
 </script>
-  
 </head>
 <body>
 
   <!--Main body --> 
   <div id='big_wrapper'>
     <div id="radioplay">
-        <img src="images/stop.png" id = "btnPlay" class="grow"></button>
-        <span id="radioName">BBC World Service</span>   
+          <span id="radioName">BBC World Service</span>
+          <div>  
+          <span id="previousName" class="hidden-xs" style="margin:3px;">Previous Radio Station</span> 
+          <img src="../images/previous.png" alt="Previous" id="btnPrevious" style="margin:3px;" class="grow" title="Previous Channel">
+          <img src="../images/stop.png" id = "btnPlay" class="grow" style="margin:3px;" title="Pause/Play">
+          <img src="../images/next.png" alt="Next" id="btnNext" style="margin:3px;" class="grow" title="Next Channels">
+          <span id="nextName" class="hidden-xs" style="margin:3px;">Next Radio Station</span> 
+          <img src="../images/time.png" alt="Set timeout" id="btnTime" style="margin:3px;" class="grow" title="Set time to stop listening">
+          <button class="btn btn-success" onclick="window.location ='../';" style="float:right;">Simple Version</button>
+         </div>
       </div>
     <!--Header -->
     <div class="page-header">

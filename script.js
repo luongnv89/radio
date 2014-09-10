@@ -309,8 +309,8 @@ luongnvinfo={
 		console.log('Selected: ' + rsIndex);
 		var rsData = luongnvinfo.data[rsIndex];
 		rsName.innerHTML=rsData.name;
-		rsDesc.innerHTML=rsData.desc;
-		rsLogo.src=rsData.logo;
+		if (rsDesc) rsDesc.innerHTML=rsData.desc;
+		if (rsLogo) rsLogo.src=rsData.logo;
 		if(rsIndex>0){
 			rsP.innerHTML=luongnvinfo.data[rsIndex-1].name;
 		}else{
