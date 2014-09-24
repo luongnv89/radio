@@ -182,7 +182,7 @@ input[type='range']::-moz-range-thumb {
 }
 
 .glyphicon{
-  font-size: 1.5em;
+  font-size: 2em;
   margin: 3px;
   /*color: #0000FF;*/
 }
