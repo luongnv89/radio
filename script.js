@@ -304,10 +304,10 @@ luongnvinfo={
 	},
 	btnPlayClick:function () {
 		if(audioplayer.paused){
-			btnPlay.src='images/stop.png';
+			btnPlay.setAttribute('class','glyphicon glyphicon-stop');
 			audioplayer.play();
 		}else{
-			btnPlay.src='images/play.png';
+			btnPlay.setAttribute('class','glyphicon glyphicon-play');
 			audioplayer.pause();
 		}
 	},
@@ -351,7 +351,7 @@ luongnvinfo={
 		name = document.createElement('h3'),
 		other = document.createElement('div'),
 		otherText = document.createElement('h4');
-		col.setAttribute('class','col-sm-6 col-md-4');
+		col.setAttribute('class','col-sm-6 col-xs-12 col-md-3');
 		col.setAttribute('id','rs-'+index);
 		col.setAttribute('data-dismiss','modal');
 		thumbnail.setAttribute('class','thumbnail');

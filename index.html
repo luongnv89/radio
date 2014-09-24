@@ -49,7 +49,7 @@
 <body>
 
   <!--Main body --> 
-  <div id='big_wrapper'>
+  <div id='big_wrapper' class="container">
 
     <!--Header -->
     <div class="page-header">
@@ -57,11 +57,11 @@
     </div>
     <!--Main contain -->
 
-    <div class="container bs-docs-container" id='main-contain'>
+    <div class="bs-docs-container" id='main-contain'>
       <!-- CURRENT CHANNEL -->
       <div class="media" id="currentChannel">
         <div class=" pull-left">
-        <img class="media-object" src="images/piano.png" alt="Current Channel Logo" id="currentLogo" style="padding:10px;">
+          <img class="media-object" src="images/piano.png" alt="Current Channel Logo" id="currentLogo" style="padding:10px;">
           <div id="radioName">Media heading</div>  
         </div>
         <div class="media-body hidden-xs">
@@ -70,52 +70,51 @@
         </div>
       </div>
       <!-- PLAYER -->
-      <div id="radioplay" >
-       <audio id="audioplayer" preload="true" autoplay controls currentRS="0" hidden>
-        <source src="http://pianosolo.streamguys.net:80/live">
-          Your browser does not support "audio" tag!
-        </audio>
-        <img src="images/playlist.png" alt="PlayList" id="btnPlayList" data-toggle="modal" data-target="#myModal" style="float:left;margin-top:10px;" class="grow" title="List Channels">
-        <span id="previousName" class="hidden-xs" style="margin:3px;">Previous Radio Station</span> 
-        <img src="images/previous.png" alt="Previous" id="btnPrevious" style="margin:3px;" class="grow" title="Previous Channel">
-        <img src="images/stop.png" id = "btnPlay" class="grow" style="margin:3px;" title="Pause/Play">
-        <img src="images/next.png" alt="Next" id="btnNext" style="margin:3px;" class="grow" title="Next Channels">
-        <span id="nextName" class="hidden-xs" style="margin:3px;">Next Radio Station</span>
-         <img class="grow" onclick="window.location ='index-full.html';" style="float:right;" src="images/change.png" title="Change to full version">
-         <img src="images/time.png" alt="Set timeout" id="btnTime" style="margin:3px;float:right;" class="grow" title="Set time to stop listening">
-         <input id="volume" type="range" min="0" max="100" value="50" step="10"></input>
-        <span id="volumeValue"></span> 
+      <div id="radioplay">
+       <audio id="audioplayer" preload="true" autoplay="" controls="" currentrs="0" hidden="">
+        Your browser does not support "audio" tag!
+        <source src="http://bbcwssc.ic.llnwd.net/stream/bbcwssc_mp1_ws-eieuk"></audio>
+          <span class="glyphicon glyphicon-th-list grow" alt="PlayList" id="btnPlayList" data-toggle="modal" data-target="#myModal" style="float:left;" title="List Channels"></span> 
+          <span id="previousName" class="hidden-xs" style="margin:3px;">No previous</span> 
+          <span alt="Previous" id="btnPrevious" style="margin:3px;" class="grow glyphicon glyphicon-step-backward" title="Previous Channel"></span> 
+          <span id="btnPlay" class="grow glyphicon glyphicon-stop" style="margin:3px;" title="Pause/Play"></span> 
+          <span class="grow glyphicon glyphicon-step-forward" alt="Next" id="btnNext" style="margin:3px;" title="Next Channels"></span> 
+          <span id="nextName" class="hidden-xs" style="margin:3px;">Jazz FM</span>
+          <span id="volumeValue">5</span>   
+          <input id="volume" type="range" min="0" max="100" value="50" step="10">
+          <span alt="Set timeout" id="btnTime" style="margin:3px;float:right;" class="grow glyphicon glyphicon-time" title="Set time to stop listening"></span>         
+          <span class="grow glyphicon glyphicon-new-window" onclick="window.location ='index-full.html';" style="float:right;" title="Change to full version"></span>
+        </div>
+        <!--End of main contain -->
       </div>
-      <!--End of main contain -->
-    </div>
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            <h4 class="modal-title" id="myModalLabel">Pick a radio station</h4>
-          </div>
-          <div class="modal-body">
-            <div class="row" id="listEnglish">
-              <h2 class="languageList">English Radio</h2>
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+              <h4 class="modal-title" id="myModalLabel">Pick a radio station</h4>
             </div>
+            <div class="modal-body">
+              <div class="row" id="listEnglish">
+                <h2 class="languageList">English Radio</h2>
+              </div>
 
-            <div class="row" id="listFrench">
-              <h2 class="languageList">French Radio</h2>
-            </div>
+              <div class="row" id="listFrench">
+                <h2 class="languageList">French Radio</h2>
+              </div>
 
-            <div class="row" id="listIns">
-              <h2 class="languageList">Close your eyes and feel...</h2>
+              <div class="row" id="listIns">
+                <h2 class="languageList">Close your eyes and feel...</h2>
+              </div>
+              <div class="row" id="listOthers">
+                <h2 class="languageList">Others</h2>
+              </div>
             </div>
-            <div class="row" id="listOthers">
-              <h2 class="languageList">Others</h2>
+            <div class="modal-footer">
             </div>
-          </div>
-          <div class="modal-footer">
           </div>
         </div>
       </div>
-    </div>
 <!--       <footer id='the_footer'>
         <div id='social_network'>
           Contact - <a href="mailto:luongnv89@gmail.com"><img src="images/email.png" class='link_icon float-shadow'></a>

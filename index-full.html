@@ -30,72 +30,72 @@
   <title>Nguyen Van Luong | Software Engineer</title>
   <link rel="shortcut icon" href="images/icon.ico">
   <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-51957988-3', 'auto');
-  ga('send', 'pageview');
+    ga('create', 'UA-51957988-3', 'auto');
+    ga('send', 'pageview');
 
-</script>
+  </script>
 </head>
 <body>
 
   <!--Main body --> 
-  <div id='big_wrapper'>
-    <div id="radioplay">
-          <audio id="audioplayer" preload="true" autoplay controls currentRS="0" hidden>
-            <source src="http://pianosolo.streamguys.net:80/live">
-            Your browser does not support "audio" tag!
-          </audio>
-          <span id="radioName">BBC World Service</span>
-          <img class="grow" onclick="window.location ='.';" style="float:right;" src="images/change.png" title="Change to simple version">  
-          <img src="images/time.png" alt="Set timeout" id="btnTime" style="margin:3px;float:right;" class="grow" title="Set time to stop listening">
-          <div>  
-          <span id="previousName" class="hidden-xs" style="margin:3px;">Previous Radio Station</span> 
-          <img src="images/previous.png" alt="Previous" id="btnPrevious" style="margin:3px;" class="grow" title="Previous Channel">
-          <img src="images/stop.png" id = "btnPlay" class="grow" style="margin:3px;" title="Pause/Play">
-          <img src="images/next.png" alt="Next" id="btnNext" style="margin:3px;" class="grow" title="Next Channels">
-          <span id="nextName" class="hidden-xs" style="margin:3px;">Next Radio Station</span>
-          <input id="volume" type="range" min="0" max="100" value="50" step="10"></input>
-          <span id="volumeValue"></span>
-         </div>
-      </div>
-    <!--Header -->
-    <div class="page-header">
-      <h1>Radio Online <small class="hidden-xs">Enjoy every moment</small></h1>
-    </div>
-    <!--Main contain -->
-    
-    <div class="container bs-docs-container" id='main-contain'>
-      
-      <div class="row" id="listEnglish">
-      <h2 class="languageList">English Radio</h2>
-      </div>
+  <div id='big_wrapper' class="container">
+    <div id="radioplay-full">
+      <audio id="audioplayer" preload="true" autoplay="" controls="" currentrs="0" hidden="">
 
-      <div class="row" id="listFrench">
-      <h2 class="languageList">French Radio</h2>
-      </div>
-      
-      <div class="row" id="listIns">
-      <h2 class="languageList">Close your eyes and feel...</h2>
-      </div>
-      <div class="row" id="listOthers">
-      <h2 class="languageList">Others</h2>
-      </div>
-      
-      <!--End of main contain -->
+        Your browser does not support "audio" tag!
+        <source src="http://bbcwssc.ic.llnwd.net/stream/bbcwssc_mp1_ws-eieuk"></audio>
+          <span id="radioName">BBC World Service</span>
+          <span class="grow glyphicon glyphicon-new-window" onclick="window.location ='index.html';" style="float:right;" title="Change to mini version"></span>
+          <span alt="Set timeout" id="btnTime" style="margin:3px;float:right;" class="grow glyphicon glyphicon-time" title="Set time to stop listening"></span>   
+          <div>   
+            <span id="previousName" class="hidden-xs" style="margin:3px;">No previous</span> 
+            <span alt="Previous" id="btnPrevious" style="margin:3px;" class="grow glyphicon glyphicon-step-backward" title="Previous Channel"></span> 
+            <span id="btnPlay" class="grow glyphicon glyphicon-stop" style="margin:3px;" title="Pause/Play"></span> 
+            <span class="grow glyphicon glyphicon-step-forward" alt="Next" id="btnNext" style="margin:3px;" title="Next Channels"></span> 
+            <span id="nextName" class="hidden-xs" style="margin:3px;">Jazz FM</span>
+            <span id="volumeValue">5</span>   
+            <input id="volume" type="range" min="0" max="100" value="50" step="10">
+          </div>
+        </div>
+        <!--Header -->
+        <div class="page-header">
+          <h1>Radio Online <small class="hidden-xs">Enjoy every moment</small></h1>
+        </div>
+        <!--Main contain -->
+
+        <div class="bs-docs-container" id='main-contain'>
+
+          <div class="row" id="listEnglish">
+            <h2 class="languageList">English Radio</h2>
+          </div>
+
+          <div class="row" id="listFrench">
+            <h2 class="languageList">French Radio</h2>
+          </div>
+
+          <div class="row" id="listIns">
+            <h2 class="languageList">Close your eyes and feel...</h2>
+          </div>
+          <div class="row" id="listOthers">
+            <h2 class="languageList">Others</h2>
+          </div>
+
+          <!--End of main contain -->
+        </div>
+        <!--Footer -->
+        <footer id='the_footer'>
+         <div id='social_network'>
+          Contact - <a href="mailto:luongnv89@gmail.com"><img src="images/email.png" class='link_icon float-shadow'></a>
+          <a href="http://fr.linkedin.com/in/luongnv"><img src="images/linkedin.png" class='link_icon float-shadow'></a>
+          <a href="https://twitter.com/luongnv89"><img src="images/twitter.png" class='link_icon float-shadow'></a>
+        </div>
+      </footer>
+      <!-- End of main body -->
     </div>
-    <!--Footer -->
-    <footer id='the_footer'>
-       <div id='social_network'>
-    Contact - <a href="mailto:luongnv89@gmail.com"><img src="images/email.png" class='link_icon float-shadow'></a>
-    <a href="http://fr.linkedin.com/in/luongnv"><img src="images/linkedin.png" class='link_icon float-shadow'></a>
-    <a href="https://twitter.com/luongnv89"><img src="images/twitter.png" class='link_icon float-shadow'></a>
-  </div>
-  </footer>
-  <!-- End of main body -->
-</div>
-</body>
-</html>
+  </body>
+  </html>
