@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<% include partials/templates/head.ejs%>
+	<style type="text/css">
+		#rs-description{
+			width: 100%;
+			margin: 10px;
+			font-size: 16px;
+			font-family: 'Comic Sans MS';
+		}
+		#currentLogo{
+			width:150px;
+			height:150px;
+		}
+	</style>
+</head>
+<body class="compact">
+	<div id='big_wrapper' class="container">
+		<% include partials/templates/header.ejs%>
+		<% include partials/contents/currentPlayer.ejs%>
+		<% include partials/contents/radioplayer2.ejs%>
+		<% include partials/templates/footer.ejs%>
+	</div><!-- big_wrapper -->
+	<% include partials/templates/jsscript.ejs%>
+
+	<!-- Model -->
+	<div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					<h4 class="modal-title">Pick a radio station</h4>
+					<% include partials/templates/filter.ejs%>
+				</div>
+				<div class="modal-body">
+					<% include partials/contents/listChannels.ejs%>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

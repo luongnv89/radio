@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<% include partials/templates/head.ejs%>
+	<style type="text/css">
+		.page-header{
+			margin-top: 100px;
+		}
+
+		#radioplay{
+			position: fixed;
+			top: 0;
+			left: 0;
+		}
+
+		.detail-desc{
+			display: none;
+		}
+	</style>
+</head>
+<body class="full"> 
+	<div id='big_wrapper' class="container">
+		<% include partials/templates/header.ejs%>
+		<% include partials/contents/radioplay.ejs%>
+		<% include partials/templates/filter.ejs%>
+		<% include partials/contents/listChannels.ejs%>
+		<% include partials/templates/footer.ejs%>
+	</div><!-- big_wrapper -->
+	<% include partials/templates/jsscript.ejs%>
+</body>
+</html>

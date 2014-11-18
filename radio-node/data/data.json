@@ -1,0 +1,298 @@
+{
+  "data": [
+    {
+      "url": [
+        "http://bbcwssc.ic.llnwd.net/stream/bbcwssc_mp1_ws-eieuk"
+      ],
+      "logo": "/images/bbc.jpg",
+      "name": "bbc world service",
+      "language": 0,
+      "category": 0,
+      "desc": "international news, analysis and information from the bbc world service. in-depth news and sport with audio, video and forums."
+    },
+    {
+      "url": [
+        "http://listen.onmyradio.net:8002/;"
+      ],
+      "logo": "/images/jazzfm.jpg",
+      "name": "jazz fm",
+      "language": 0,
+      "category": 1,
+      "desc": "jazz, soul, blues and rhythm and blues for the north west and london"
+    },
+    {
+      "url": [
+        "http://media-ice.musicradio.com:80/classicfmmp3"
+      ],
+      "logo": "/images/classicfm.gif",
+      "name": "classic fm",
+      "language": 0,
+      "category": 1,
+      "desc": "listen live to classic fm online radio. discover classical music and find out more about the best classical composers, musicians and their works."
+    },
+    {
+      "url": [
+        "http://newyorkcity.radiostreamlive.com:8014/radionylive_128"
+      ],
+      "logo": "/images/ny.jpg",
+      "name": "new york radio",
+      "language": 0,
+      "category": 0,
+      "desc": "new york radio stations"
+    },
+    {
+      "url": [
+        "http://5.152.208.98:8058/;"
+      ],
+      "logo": "/images/ancientfm.jpg",
+      "name": "ancient music",
+      "language": 3,
+      "category": 0,
+      "desc": "listeners wishing for a break from the modern world – with all its bleeps, blips and pushy commercials – should head over to this rather charming little radio station, which plays music from the medieval and renaissance periods and nothing else."
+    },
+    {
+      "url": [
+        "http://streaming.hotmix-radio.net/hotmixradio-dance-128.mp3"
+      ],
+      "logo": "/images/hotmix.jpg",
+      "name": "hotmix dance",
+      "language": 0,
+      "category": 1,
+      "desc": "hotmixradio dance, écouter la radio gratuite, webradio, écouter musique house techno electro djs agenda photos clubbing clips vidéos actus biographies,"
+    },
+    {
+      "url": [
+        "http://streaming64.radionomy.com/70s-disco-nights"
+      ],
+      "logo": "/images/70sdisco.jpg",
+      "name": "70s disco night",
+      "language": 0,
+      "category": 1,
+      "desc": "this wonderfully old-school internet radio station, complete with spinning mirror–ball animation, is a great way to capture the essence of disco. expect irresistibly catchy tunes, ridiculously upbeat lyrics and a faint sense of nostalgia for the era of flares and wide-collared shirts."
+    },
+    {
+      "url": [
+        "http://lin2.ash.fast-serv.com:9022/"
+      ],
+      "logo": "/images/otr.jpg",
+      "name": "old time radio",
+      "language": 0,
+      "category": 1,
+      "desc": "some time ago, i recommended the antioch otr station (radio.macinmind.com) as a fine source of soothing american radio programmes from the golden era of the 1920s-50s. this site goes one better by allowing users to listen to the shows on demand, with a generous archive."
+    },
+    {
+      "url": [
+        "http://stream.rfi.fr/2588/rfi_en_anglais/rfianglais.mp3"
+      ],
+      "logo": "/images/rfi.gif",
+      "name": "rfi anglais",
+      "language": 0,
+      "category": 0,
+      "desc": "suivez toute l\"information politique, culturelle, sportive en direct et en continu sur rfi"
+    },
+    {
+      "url": [
+        "http://telechargement.rfi.fr/rfi/francais/audio/last/rfi_24h_en_france_1_1.mp3"
+      ],
+      "logo": "/images/rfi24.png",
+      "name": "rfi 24h en france",
+      "language": 1,
+      "category": 0,
+      "desc": "écouter la session 27min, lundi à vendredi"
+    },
+    {
+      "url": [
+        "http://telechargement.rfi.fr/rfi/francais/audio/last/rfi_jrn_dernier_journal.mp3"
+      ],
+      "logo": "/images/rfi.gif",
+      "name": "rfi dernier journal monde",
+      "language": 1,
+      "category": 0,
+      "desc": "suivez toute l\"information politique, culturelle, sportive en direct et en continu sur rfi"
+    },
+    {
+      "url": [
+        "http://mp3.live.tv-radio.com/rfimonde/all/rfimonde-64k.mp3"
+      ],
+      "logo": "/images/rfi.gif",
+      "name": "rfi direct monde",
+      "language": 1,
+      "category": 0,
+      "desc": "suivez toute l\"information politique, culturelle, sportive en direct et en continu sur rfi"
+    },
+    {
+      "url": [
+        "http://mp3.live.tv-radio.com/rfimusiquemonde/all/rfimusiquemonde-64k.mp3"
+      ],
+      "logo": "/images/rfi.gif",
+      "name": "rfi musique",
+      "language": 1,
+      "category": 1,
+      "desc": "toute l\"actualité musicale. concert, biographies, news et sélection d\"artistes francophones, africains et toute la world music avec rfi musique"
+    },
+    {
+      "url": [
+        "http://telechargement.rfi.fr/rfi/francais/audio/last/rfi_jrn_dernier_journal_fr_facile.mp3"
+      ],
+      "logo": "/images/rfi.gif",
+      "name": "rfi dernier journal en francais facile",
+      "language": 1,
+      "category": 0,
+      "desc": "suivez toute l\"information politique, culturelle, sportive en direct et en continu sur rfi"
+    },
+    {
+      "url": [
+        "http://mp3tslg2.tdf-cdn.com/6675/francemusique.mp3"
+      ],
+      "logo": "/images/francemusique.jpg",
+      "name": "france musique",
+      "language": 1,
+      "category": 1,
+      "desc": "the fm spectrum in france is a land of extreme contrasts, offering everything from the very worst in euro-pop to some of the classiest stations on the continent. france musique, the jazz and classical arm of radio france, is a particularly suave member of this latter camp. i’ve yet to hear a dud programme"
+    },
+    {
+      "url": [
+        "http://audio-mp3.ibiblio.org:8000/wcpe.mp3"
+      ],
+      "logo": "/images/wcpe.jpg",
+      "name": "the classical station",
+      "language": 0,
+      "category": 1,
+      "desc": "wcpe, the classical station, plays great classical music 24 hours a day on 89.7 fm in north carolina"
+    },
+    {
+      "url": [
+        "http://pianosolo.streamguys.net:80/live"
+      ],
+      "logo": "/images/piano.png",
+      "name": "piano solo",
+      "language": 2,
+      "category": 1,
+      "desc": "in spite of its cringeworthy name, this station is actually rather a classy operation, which provides an online outlet for the works of over two hundred talented but unsigned solo piano composers. the music tends towards meditative, classical-style compositions (think ludovico einaudi and george winston in terms of tone), and makes for a gentle alternative to classic fm."
+    },
+    {
+      "url": [
+        "http://46.28.49.164:7504//stream"
+      ],
+      "logo": "/images/restrosoul.jpg",
+      "name": "restro soul",
+      "language": 0,
+      "category": 1,
+      "desc": "craig charles’s show on 6 music proves there’s a big appetite for old-fashioned funk and soul radio in the uk – and this great station from london is evidently capitalising on it. featuring everyone from the staple singers to chic to skull snaps to luther vandross, its playlist is an almost guaranteed mood-improver"
+    },
+    {
+      "url": [
+        "http://kuvo-ice.streamguys.org:80/kuvo-mp3-64"
+      ],
+      "logo": "/images/kuvo.jpg",
+      "name": "kuvo jazz",
+      "language": 0,
+      "category": 1,
+      "desc": "based in denver, colorado, its artfully-curated playlists mostly focus on jazz – broadcasting everything from ella fitzgerald through to madeleine peyroux. a class act."
+    },
+    {
+      "url": [
+        "http://wgltradio.ilstu.edu:8000/wgltmain.mp3"
+      ],
+      "logo": "/images/glt.jpg",
+      "name": "glt news",
+      "language": 0,
+      "category": 0,
+      "desc": "broadcasting from studios on the grounds of illinois state university in the wonderfully-named town of normal, wglt is a creative independent radio station with a wide range of programming – from spoken word shows like radiolab and this american life to some excellent in-house blues and jazz."
+    },
+    {
+      "url": [
+        "http://pd.npr.org/anon.npr-mp3/npr/news/newscast.mp3"
+      ],
+      "logo": "/images/npr.png",
+      "name": "npr hourly news",
+      "language": 0,
+      "category": 0,
+      "desc": "npr delivers breaking national and world news. also top stories from business, politics, health, science, technology, music, arts and culture"
+    },
+    {
+      "url": [
+        "http://wgltradio.ilstu.edu:8000/wgltjazz.mp3"
+      ],
+      "logo": "/images/glt.jpg",
+      "name": "glt jazz radio",
+      "language": 0,
+      "category": 1,
+      "desc": "broadcasting from studios on the grounds of illinois state university in the wonderfully-named town of normal, wglt is a creative independent radio station with a wide range of programming – from spoken word shows like radiolab and this american life to some excellent in-house blues and jazz."
+    },
+    {
+      "url": [
+        "http://wgltradio.ilstu.edu:8000/wgltfolk.mp3"
+      ],
+      "logo": "/images/glt.jpg",
+      "name": "glt acousticity",
+      "language": 0,
+      "category": 1,
+      "desc": "broadcasting from studios on the grounds of illinois state university in the wonderfully-named town of normal, wglt is a creative independent radio station with a wide range of programming – from spoken word shows like radiolab and this american life to some excellent in-house blues and jazz."
+    },
+    {
+      "url": [
+        "http://50.31.180.202:80/"
+      ],
+      "logo": "/images/kexp.jpg",
+      "name": "kexp",
+      "language": 0,
+      "category": 1,
+      "desc": "seattle has long been a key musical centre in the us – the birthplace of grunge music, home to nirvana and pearl jam and more recently, fleet foxes. no surprise, then, that the city is also home to a world-class indie and alt-rock radio station. think xfm, but about a hundred times cooler"
+    },
+    {
+      "url": [
+        "http://reachonair.net:8320/live320"
+      ],
+      "logo": "/images/reachonair.png",
+      "name": "reach on air",
+      "language": 0,
+      "category": 1,
+      "desc": "this station gives aspiring broadcasters the chance to put their own content out to a global audience for free. would–be djs simply need to record their show, book a time–slot and upload it to the site. much of the content is shaky, but it\"s heartening to hear people giving the medium a shot"
+    },
+    {
+      "url": [
+        "http://stereo.dfm.nu"
+      ],
+      "logo": "/images/dfm.jpg",
+      "name": "dfm rtv int",
+      "language": 0,
+      "category": 1,
+      "desc": "based in central amsterdam, this radio station broadcasts an eclectic mixture of music, talk and \"found sound\". i tuned in the other day to hear the audio from an episode of adam curtis’s bbc two documentary series all watched over by machines of loving grace interspersed with britpop era hits. oddly captivating"
+    },
+    {
+      "url": [
+        "http://icecast.uvm.edu:8005/wruv_fm_256"
+      ],
+      "logo": "/images/wruv.jpg",
+      "name": "wruv fm",
+      "language": 0,
+      "category": 1,
+      "desc": "this community-run station from the university of vermont is a regular springer of surprises, thanks to its 'free form' policy. in a nutshell, djs are given a weekly slot to play whatever they like. this can be a recipe for disaster in the wrong hands, but here it leads to an energising blend"
+    },
+    {
+      "url": [
+        "http://stream0.wfmu.org/freeform-128k",
+        "http://stream1.wfmu.org/freeform-128k",
+        "http://stream2.wfmu.org/freeform-128k",
+        "http://stream3.wfmu.org/freeform-128k"
+      ],
+      "logo": "/images/wfmu.jpg",
+      "name": "wfmu",
+      "language": 0,
+      "category": 2,
+      "desc": "possibly the world\"s coolest radio station, wfmu is the longest running independent 'freeform' station in the us, operating out of mount hope in new jersey, paid for by its listeners (no ads!), with an eclectic slate of shows that offers something for anyone who has ever ventured outside the mainstream, from the french pop (and birdsong) inflections of this is the modern world with trouble to the early gospel of sinner\"s crossroads. "
+    }
+  ],
+  "langs": [
+    "english",
+    "french",
+    "instrument",
+    "other"
+  ],
+  "cats": [
+    "news",
+    "music",
+    "talk"
+  ]
+}

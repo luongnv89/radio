@@ -1,0 +1,28 @@
+  <div class="checkbox" id="cbFilter">
+  <h4 > Languages</h4>
+  	<div class="row fontawesome-icon-list">
+  		<%listLanguages.forEach(function(lang){%>
+  		<div class="fa-hover col-md-3 col-sm-4" >
+  			<%if(currentParams.indexOf(lang)>-1){%>
+  			<input type="checkbox" name="languageBox[]" value='<%=lang%>'checked > <%=lang%>
+  			<%}else{%>
+  			<input type="checkbox" name="languageBox[]" value='<%=lang%>'> <%=lang%>
+  			<%}%>
+  		</div>
+  		<%});%>
+  	</div>
+  	<h4 > Categories </h4>
+  	<div class="row fontawesome-icon-list">
+  		<%listCats.forEach(function(cat){%>
+  		<div class="fa-hover col-md-3 col-sm-4" >
+  			<%if(currentParams.indexOf(cat)>-1){%>
+  			<input type="checkbox" name="catBox[]" value='<%=cat%>' checked > <%=cat%>
+  			<%}else{%>
+  			<input type="checkbox" name="catBox[]" value='<%=cat%>' > <%=cat%>
+  			<%}%>
+  		</div>
+  		<%});%>
+  	</div>
+  	<button type="submit" class="btn btn-primary" id="btnSubmit">Update</button>
+  </div>
+  
