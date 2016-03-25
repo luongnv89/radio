@@ -9,7 +9,7 @@ luongnvinfo={
 		volumeValue = document.getElementById('volumeValue');
 		volumeValue.innerHTML = rsVolume.value/10;
 		var btnSubmit = document.getElementById('btnSubmit');
-		btnSubmit.addEventListener('click',luongnvinfo.submitForm);
+		// btnSubmit.addEventListener('click',luongnvinfo.submitForm);
 
 		btnNext = document.getElementById('btnNext');
 		btnNext.onclick = function () {
