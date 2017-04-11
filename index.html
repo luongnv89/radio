@@ -34,7 +34,7 @@
             <h1>Radio Online <small class="hidden-xs">Enjoy every moment</small></h1>
         </div>
         <!--Main contain -->
-        <div class="bs-docs-container">
+        <div class="container">
             <!-- CURRENT CHANNEL -->
             <div class="media" id="currentChannel">
                 <div class=" pull-left">
@@ -47,25 +47,29 @@
                 </div>
             </div>
             <!-- PLAYER -->
-            <div id="radioplay">
-                <audio id="audioplayer" preload="true" autoplay="" controls="" currentrs="0" hidden="">
-                    Your browser does not support "audio" tag!
-                    <source src="http://bbcwssc.ic.llnwd.net/stream/bbcwssc_mp1_ws-eieuk">
-                </audio>
-                <!-- Show list button -->
-                <a class="btn btn-default btn-sm fa fa-list" alt="PlayList" id="btnPlayList" data-toggle="modal" data-target="#myModal" style="float:left;" title="List Channels"></a>
-                <span id="previousName" class="hidden-xs" style="margin:3px;">No previous</span>
-                <!-- Backward button -->
-                <a class="btn btn-default btn-sm fa fa-step-backward" alt="Previous" id="btnPrevious" style="margin:3px;" title="Previous Channel"></a>
-                <a id="btnPlay" class="btn btn-default btn-sm fa fa-pause-circle" style="margin:3px;" title="Pause/Play"></a>
-                <!-- Forward button -->
-                <a class="btn btn-default btn-sm fa fa-step-forward" alt="Next" id="btnNext" style="margin:3px;" title="Next Channels"></a>
-                <span id="nextName" class="hidden-xs" style="margin:3px;">Jazz FM</span>
-                <!-- Volume button -->
-                <input id="volume" type="range" min="0" max="100" value="50" step="10" class="hidden-xs">
-                <span id="volumeValue" class="hidden-xs">5</span>
+            <div id="radioplay" class="row">
+                <div class="col-sm-7">
+                    <audio id="audioplayer" preload="true" autoplay="" controls="" currentrs="0" hidden="">
+                        Your browser does not support "audio" tag!
+                        <source src="http://bbcwssc.ic.llnwd.net/stream/bbcwssc_mp1_ws-eieuk">
+                    </audio>
+                    <!-- Show list button -->
+                    <a class="btn btn-default btn-sm fa fa-list" alt="PlayList" id="btnPlayList" data-toggle="modal" data-target="#myModal" style="float:left;" title="List Channels"></a>
+                    <span id="previousName" class="hidden-xs" style="margin:3px;">No previous</span>
+                    <!-- Backward button -->
+                    <a class="btn btn-default btn-sm fa fa-step-backward" alt="Previous" id="btnPrevious" style="margin:3px;" title="Previous Channel"></a>
+                    <a id="btnPlay" class="btn btn-default btn-sm fa fa-pause-circle" style="margin:3px;" title="Pause/Play"></a>
+                    <!-- Forward button -->
+                    <a class="btn btn-default btn-sm fa fa-step-forward" alt="Next" id="btnNext" style="margin:3px;" title="Next Channels"></a>
+                    <span id="nextName" class="hidden-xs" style="margin:3px;">Jazz FM</span>
+                </div>
+                <div class="col-sm-5">
+                    <!-- Volume button -->
+                    <input id="volume" type="range" min="0" max="100" value="50" step="10" class="hidden-xs">
+                    <span id="volumeValue">5</span>
+                </div>
             </div>
-            <span class="text-danger" id="error-message"></span>
+            <span class="text-danger" id="error-message">Error message</span>
         </div>
         <!-- List channels to select -->
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
