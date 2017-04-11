@@ -4,7 +4,7 @@
  * @copyright luongnv89
  */
 radio = {
-    version: '1.0.0.2',
+    version: '1.0.1.2',
     langs: ['English', 'French', 'Instrument', 'Other'],
     cats: ['News', 'Music', 'Talk'],
     data: [],
@@ -51,8 +51,30 @@ radio = {
         listIns = document.getElementById('listIns');
         listOthers = document.getElementById('listOthers');
         radio.getData();
+
+        $('#error-message').hide();
+
+        audioplayer.addEventListener('error', function(e) {
+            switch (e.target.error.code) {
+                case e.target.error.MEDIA_ERR_ABORTED:
+                    radio.showErrorMessage('You aborted the media playback.');
+                    break;
+                case e.target.error.MEDIA_ERR_NETWORK:
+                    radio.showErrorMessage('A network error caused the media download to fail.');
+                    break;
+                case e.target.error.MEDIA_ERR_DECODE:
+                    radio.showErrorMessage('The media playback was aborted due to a corruption problem or because the media used features your browser did not support.');
+                    break;
+                case e.target.error.MEDIA_ERR_SRC_NOT_SUPPORTED:
+                    radio.showErrorMessage('The media could not be loaded, either because the server or network failed or because the format is not supported.');
+                    break;
+                default:
+                    radio.showErrorMessage('An unknown media error occurred.');
+            }
+        });
     },
     btnPlayClick: function() {
+        $('#error-message').hide();
         if (audioplayer.paused) {
             btnPlay.setAttribute('class', 'fa fa-pause-circle');
             audioplayer.play();
@@ -62,6 +84,7 @@ radio = {
         }
     },
     selectStream: function(rsIndex) {
+        $('#error-message').hide();
         var rsData = radio.data[rsIndex];
         console.debug('Selected channel: ' + rsData.name);
         rsName.innerHTML = rsData.name;
@@ -133,7 +156,7 @@ radio = {
         xmlHttp.onreadystatechange = function() {
             if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
                 radio.data = JSON.parse(xmlHttp.responseText);
-                console.debug('Number of channels: ',radio.data.length);
+                console.debug('Number of channels: ', radio.data.length);
                 for (var i = 0; i < radio.data.length; i++) {
                     var rsDOM = radio.createDOMElement(i, radio.data[i]);
                     switch (radio.data[i].language) {
@@ -156,10 +179,14 @@ radio = {
         }
         xmlHttp.open("GET", url, true);
         xmlHttp.send();
-
+    },
+    showErrorMessage: function(msg) {
+        $('#error-message').show();
+        $('#error-message').text(msg);
     }
 }
 
+
 document.addEventListener('DOMContentLoaded', radio.doFirst, false);
 
-console.log('[info] radio.js has been loaded! ('+ radio.version +')');
+console.log('[info] radio.js has been loaded! (' + radio.version + ')');

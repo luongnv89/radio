@@ -53,18 +53,19 @@
                     <source src="http://bbcwssc.ic.llnwd.net/stream/bbcwssc_mp1_ws-eieuk">
                 </audio>
                 <!-- Show list button -->
-                <a class="btn btn-default btn-small fa fa-list" alt="PlayList" id="btnPlayList" data-toggle="modal" data-target="#myModal" style="float:left;" title="List Channels"></a>
+                <a class="btn btn-default btn-sm fa fa-list" alt="PlayList" id="btnPlayList" data-toggle="modal" data-target="#myModal" style="float:left;" title="List Channels"></a>
                 <span id="previousName" class="hidden-xs" style="margin:3px;">No previous</span>
                 <!-- Backward button -->
-                <a class="btn btn-default btn-small fa fa-step-backward" alt="Previous" id="btnPrevious" style="margin:3px;" title="Previous Channel"></a>
-                <a id="btnPlay" class="btn btn-default btn-small fa fa-pause-circle" style="margin:3px;" title="Pause/Play"></a>
+                <a class="btn btn-default btn-sm fa fa-step-backward" alt="Previous" id="btnPrevious" style="margin:3px;" title="Previous Channel"></a>
+                <a id="btnPlay" class="btn btn-default btn-sm fa fa-pause-circle" style="margin:3px;" title="Pause/Play"></a>
                 <!-- Forward button -->
-                <a class="btn btn-default btn-small fa fa-step-forward" alt="Next" id="btnNext" style="margin:3px;" title="Next Channels"></a>
+                <a class="btn btn-default btn-sm fa fa-step-forward" alt="Next" id="btnNext" style="margin:3px;" title="Next Channels"></a>
                 <span id="nextName" class="hidden-xs" style="margin:3px;">Jazz FM</span>
                 <span id="volumeValue" class="hidden-xs">5</span>
                 <!-- Volume button -->
                 <input id="volume" type="range" min="0" max="100" value="50" step="10" class="hidden-xs">
             </div>
+            <div class="well well-sm text-danger hidden-xs" id="error-message"></div>
         </div>
         <!-- List channels to select -->
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
