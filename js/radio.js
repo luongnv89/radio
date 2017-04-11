@@ -4,6 +4,7 @@
  * @copyright luongnv89
  */
 radio = {
+    version: '1.0.0',
     langs: ['English', 'French', 'Instrument', 'Other'],
     cats: ['News', 'Music', 'Talk'],
     data: [],
@@ -161,4 +162,4 @@ radio = {
 
 document.addEventListener('DOMContentLoaded', radio.doFirst, false);
 
-console.log('[info] radio.js has been loaded!');
+console.log('[info] radio.js '+ radio.version +'has been loaded!');
