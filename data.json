@@ -6,13 +6,6 @@
         "category": 0,
         "desc": "International news, analysis and information from the BBC World Service. In-depth news and sport with audio, video and forums."
     }, {
-        "url": ["http://listen.onmyradio.net:8002/;"],
-        "logo": "images/jazzfm.jpg",
-        "name": "Jazz FM",
-        "language": 0,
-        "category": 1,
-        "desc": "Jazz, soul, blues and rhythm and blues for the North West and London"
-    }, {
         "url": ["http://media-ice.musicradio.com:80/ClassicFMMP3"],
         "logo": "images/classicfm.gif",
         "name": "Classic FM",
@@ -55,13 +48,6 @@
         "category": 1,
         "desc": "Some time ago, I recommended the Antioch OTR station (radio.macinmind.com) as a fine source of soothing American radio programmes from the golden era of the 1920s-50s. This site goes one better by allowing users to listen to the shows on demand, with a generous archive."
     }, {
-        "url": ["http://stream.rfi.fr/2588/rfi_en_anglais/rfianglais.mp3"],
-        "logo": "images/rfi.gif",
-        "name": "RFI Anglais",
-        "language": 0,
-        "category": 0,
-        "desc": "Suivez toute l\"information politique, culturelle, sportive en direct et en continu sur RFI"
-    }, {
         "url": ["http://telechargement.rfi.fr/rfi/francais/audio/last/RFI_24H_en_france_1_1.mp3"],
         "logo": "images/rfi24.png",
         "name": "RFI 24H en France",
@@ -75,34 +61,13 @@
         "language": 1,
         "category": 0,
         "desc": "Suivez toute l\"information politique, culturelle, sportive en direct et en continu sur RFI"
-    }, {
-        "url": ["http://mp3.live.tv-radio.com/rfimonde/all/rfimonde-64k.mp3"],
-        "logo": "images/rfi.gif",
-        "name": "RFI Direct Monde",
-        "language": 1,
-        "category": 0,
-        "desc": "Suivez toute l\"information politique, culturelle, sportive en direct et en continu sur RFI"
-    }, {
-        "url": ["http://mp3.live.tv-radio.com/rfimusiquemonde/all/rfimusiquemonde-64k.mp3"],
-        "logo": "images/rfi.gif",
-        "name": "RFI Musique",
-        "language": 1,
-        "category": 1,
-        "desc": "Toute l\"actualité musicale. Concert, biographies, news et sélection d\"artistes francophones, africains et toute la world music avec RFI Musique"
-    }, {
+    },  {
         "url": ["http://telechargement.rfi.fr/rfi/francais/audio/last/rfi_jrn_dernier_journal_fr_facile.mp3"],
         "logo": "images/rfi.gif",
         "name": "RFI Dernier Journal en Francais Facile",
         "language": 1,
         "category": 0,
         "desc": "Suivez toute l\"information politique, culturelle, sportive en direct et en continu sur RFI"
-    }, {
-        "url": ["http://mp3tslg2.tdf-cdn.com/6675/francemusique.mp3"],
-        "logo": "images/francemusique.jpg",
-        "name": "France Musique",
-        "language": 1,
-        "category": 1,
-        "desc": "The FM spectrum in France is a land of extreme contrasts, offering everything from the very worst in Euro-pop to some of the classiest stations on the continent. France Musique, the jazz and classical arm of Radio France, is a particularly suave member of this latter camp. I’ve yet to hear a dud programme"
     }, {
         "url": ["http://audio-mp3.ibiblio.org:8000/wcpe.mp3"],
         "logo": "images/wcpe.jpg",
