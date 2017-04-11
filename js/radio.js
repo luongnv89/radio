@@ -4,7 +4,7 @@
  * @copyright luongnv89
  */
 radio = {
-    version: '1.0.1.2',
+    version: '1.0.1.3',
     langs: ['English', 'French', 'Instrument', 'Other'],
     cats: ['News', 'Music', 'Talk'],
     data: [],
@@ -181,6 +181,7 @@ radio = {
         xmlHttp.send();
     },
     showErrorMessage: function(msg) {
+        console.debug(msg);
         $('#error-message').show();
         $('#error-message').text(msg);
     }
