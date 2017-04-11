@@ -1,7 +1,6 @@
 radio
 =====
 
-Online Radio Web Application
+My Online Radio Web Application: [http://luongnv89.github.io/radio/](http://luongnv89.github.io/radio/)
 
--------------------------------
-Nguyen Van Luong - luongnv89@gmail.com - [http://luongnv.info](http://luongnv.info)
+

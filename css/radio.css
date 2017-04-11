@@ -35,8 +35,6 @@ body{
   margin: 5px;
 }
 
-
-
 #main-contain{
   margin-top: 0px;
   display:-webkit-box;
@@ -134,18 +132,6 @@ img#btnPlay{
   display:inline;
   padding: 3px;
 }
-/*img:hover{
-  -webkit-filter: grayscale(0%);
-  -moz-filter: grayscale(0%);
-  filter: grayscale(0%);
-}
-
-img{
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  filter: grayscale(100%);
-}
-*/
 
 input[type='range'] {
   -webkit-appearance: none;
@@ -184,8 +170,8 @@ input[type='range']::-moz-range-thumb {
 .glyphicon{
   font-size: 2em;
   margin: 3px;
-  /*color: #0000FF;*/
 }
+
 .modal-dialog{
   width: 90%;
 }

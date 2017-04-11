@@ -1,0 +1,65 @@
+<!--Main body -->
+<div id='big_wrapper' class="container">
+    <!--Header -->
+    <div class="page-header">
+        <h1>Radio Online <small class="hidden-xs">Enjoy every moment</small></h1>
+    </div>
+    <!--Main contain -->
+    <div class="bs-docs-container" id='main-contain'>
+        <!-- CURRENT CHANNEL -->
+        <div class="media" id="currentChannel">
+            <div class=" pull-left">
+                <img class="media-object" src="images/piano.png" alt="Current Channel Logo" id="currentLogo" style="padding:10px;">
+                <div id="radioName">Media heading</div>
+            </div>
+            <div class="media-body hidden-xs">
+                <h4 class="media-heading">Information</h4>
+                <span id="rs-description">In spite of its cringeworthy name, this station is actually rather a classy operation, which provides an online outlet for the works of over two hundred talented but unsigned solo piano composers. The music tends towards meditative, classical-style compositions (think Ludovico Einaudi and George Winston in terms of tone), and makes for a gentle alternative to Classic FM.</span>
+            </div>
+        </div>
+        <!-- PLAYER -->
+        <div id="radioplay">
+            <audio id="audioplayer" preload="true" autoplay="" controls="" currentrs="0" hidden="">
+                Your browser does not support "audio" tag!
+                <source src="http://bbcwssc.ic.llnwd.net/stream/bbcwssc_mp1_ws-eieuk">
+            </audio>
+            <span class="glyphicon glyphicon-th-list grow" alt="PlayList" id="btnPlayList" data-toggle="modal" data-target="#myModal" style="float:left;" title="List Channels"></span>
+            <span id="previousName" class="hidden-xs" style="margin:3px;">No previous</span>
+            <span alt="Previous" id="btnPrevious" style="margin:3px;" class="grow glyphicon glyphicon-step-backward" title="Previous Channel"></span>
+            <span id="btnPlay" class="grow glyphicon glyphicon-stop" style="margin:3px;" title="Pause/Play"></span>
+            <span class="grow glyphicon glyphicon-step-forward" alt="Next" id="btnNext" style="margin:3px;" title="Next Channels"></span>
+            <span id="nextName" class="hidden-xs" style="margin:3px;">Jazz FM</span>
+            <span id="volumeValue" class="hidden-xs">5</span>
+            <input id="volume" type="range" min="0" max="100" value="50" step="10" class="hidden-xs">
+            <span class="grow glyphicon glyphicon-new-window" onclick="window.location ='index.html';" style="float:right;" title="Change to impact version"></span>
+            <!-- <span alt="Set timeout" id="btnTime" style="margin:3px;float:right;" class="grow glyphicon glyphicon-time" title="Set time to stop listening"></span>  -->
+        </div>
+        <!--End of main contain -->
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Pick a radio station</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row" id="listEnglish">
+                        <h2 class="languageList">English Radio</h2>
+                    </div>
+                    <div class="row" id="listFrench">
+                        <h2 class="languageList">French Radio</h2>
+                    </div>
+                    <div class="row" id="listIns">
+                        <h2 class="languageList">Close your eyes and feel...</h2>
+                    </div>
+                    <div class="row" id="listOthers">
+                        <h2 class="languageList">Others</h2>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
