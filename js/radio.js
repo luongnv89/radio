@@ -53,10 +53,10 @@ radio = {
     },
     btnPlayClick: function() {
         if (audioplayer.paused) {
-            btnPlay.setAttribute('class', 'glyphicon glyphicon-stop');
+            btnPlay.setAttribute('class', 'fa fa-pause-circle');
             audioplayer.play();
         } else {
-            btnPlay.setAttribute('class', 'glyphicon glyphicon-play');
+            btnPlay.setAttribute('class', 'fa fa-play-circle');
             audioplayer.pause();
         }
     },
