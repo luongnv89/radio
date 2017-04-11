@@ -4,7 +4,7 @@
  * @copyright luongnv89
  */
 radio = {
-    version: '1.0.2.5',
+    version: '1.0.2.6',
     langs: ['English', 'French', 'Instrument', 'Other'],
     cats: ['News', 'Music', 'Talk'],
     data: [],
@@ -76,10 +76,10 @@ radio = {
     btnPlayClick: function() {
         $('#error-message').hide();
         if (audioplayer.paused) {
-            btnPlay.setAttribute('class', 'fa fa-pause-circle');
+            btnPlay.setAttribute('class', 'btn btn-default btn-sm fa fa-pause-circle');
             audioplayer.play();
         } else {
-            btnPlay.setAttribute('class', 'fa fa-play-circle');
+            btnPlay.setAttribute('class', 'btn btn-default btn-sm fa fa-play-circle');
             audioplayer.pause();
         }
     },
