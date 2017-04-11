@@ -4,7 +4,7 @@
  * @copyright luongnv89
  */
 radio = {
-    version: '1.0.2.2',
+    version: '1.0.2.3',
     langs: ['English', 'French', 'Instrument', 'Other'],
     cats: ['News', 'Music', 'Talk'],
     data: [],
