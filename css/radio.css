@@ -201,7 +201,7 @@ input[type='range']::-moz-range-thumb {
     width: 20px;
 }
 
-.glyphicon {
+.fa {
     font-size: 2em;
     margin: 3px;
 }
