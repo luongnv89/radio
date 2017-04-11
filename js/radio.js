@@ -162,4 +162,4 @@ radio = {
 
 document.addEventListener('DOMContentLoaded', radio.doFirst, false);
 
-console.log('[info] radio.js '+ radio.version +'has been loaded!');
+console.log('[info] radio.js has been loaded! ('+ radio.version +')');
