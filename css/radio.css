@@ -1,7 +1,3 @@
-h1 {
-    font: bold 30px Tahoma;
-}
-
 header,
 section,
 footer,
@@ -12,6 +8,14 @@ hgroup {
     display: block;
 }
 
+h1,
+h2,
+h3,
+h4,
+span {
+    font-family: 'Comic Sans MS';
+}
+
 body {
     width: 100%;
     display: -webkit-box;
@@ -20,53 +24,13 @@ body {
     -moz-box-pack: center;
 }
 
-#big_wrapper {
-    max-width: 1000px;
-    margin: 10px 0px;
-    display: -webkit-box;
-    display: -moz-box;
-    -webkit-box-orient: vertical;
-    -moz-box-orient: vertical;
-    -webkit-box-flex: 1;
-    -moz-box-flex: 1;
+.fa {
+    font-size: 2em;
+    margin: 3px;
 }
 
-#top_header {
-    padding: 10px;
-    margin-left: 10px;
-}
-
-#the_footer {
-    text-align: center;
-}
-
-.link_icon {
-    width: 32px;
-    margin: 5px;
-}
-
-#main-contain {
-    margin-top: 0px;
-    display: -webkit-box;
-    display: -moz-box;
-    -webkit-box-orient: vertical;
-    -moz-box-orient: vertical;
-}
-
-#rs-description {
-    width: 100%;
-    margin: 10px;
-    font-size: 16px;
-    font-family: 'Comic Sans MS';
-}
-
-#myModal {
-    width: 100%;
-}
-
-#currentLogo {
-    width: 150px;
-    height: 150px;
+.modal-dialog {
+    width: 90%;
 }
 
 .thumbnail {
@@ -78,65 +42,8 @@ body {
     height: 100px;
 }
 
-#audioplayer {
-    position: absolute;
-    top: -30px;
-    right: -10px;
-}
-
-#radioName {
-    font-weight: bold;
-    margin-bottom: 10px;
-    font-size: 20px;
-    font-family: 'Comic Sans MS';
-    font-style: italic;
-}
-
-#radioplay-full {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    z-index: 10000;
-    padding: 3px;
-    opacity: 0.8;
-    background-color: #CEECF5;
-    border: 1px solid #CEECF5;
-    border-radius: 10px;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-}
-
-#radioplay {
-    /*margin-left: auto;*/
-    /*margin-right: auto;*/
-    width: 100%;
-    z-index: 10000;
-    padding: 3px;
-    opacity: 0.8;
-    background-color: #CEECF5;
-    border: 1px solid #CEECF5;
-    border-radius: 10px;
-}
-
-.otherInfo h4 {
-    font-size: 12px;
-    font-family: 'Comic Sans MS';
-}
-
-.languageList {
-    font-size: 20px;
-    font-family: 'Comic Sans MS';
-}
-
 .caption h3 {
     font-size: 16px;
-    font-family: 'Comic Sans MS';
-}
-
-img#btnPlay {
-    width: 50px;
-    height: 50px;
 }
 
 .row {
@@ -150,12 +57,55 @@ img#btnPlay {
     height: 80px;
 }
 
-#thankText {
-    text-align: center;
-    color: #d7ceb2;
-    text-shadow: 3px 3px 0px #2c2e38, 5px 5px 0px #5c5f72;
-    font: 40px 'BazarMedium';
-    letter-spacing: 5px;
+#rs-description {
+    width: 100%;
+    margin: 10px;
+    font-size: 16px;
+}
+
+#myModal {
+    width: 100%;
+}
+
+#currentLogo {
+    width: 150px;
+    height: 150px;
+}
+
+#audioplayer {
+    position: absolute;
+    top: -30px;
+    right: -10px;
+}
+
+#radioName {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+#radioplay {
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    width: 100%;
+    z-index: 10000;
+    padding: 3px;
+    opacity: 0.8;
+    background-color: #CEECF5;
+}
+
+.otherInfo h4 {
+    font-size: 12px;
+}
+
+.languageList {
+    font-size: 20px;
+}
+
+img#btnPlay {
+    width: 50px;
+    height: 50px;
 }
 
 #volume {
@@ -163,6 +113,9 @@ img#btnPlay {
     display: inline;
     padding: 3px;
 }
+
+
+/* Volume adjustment bar */
 
 input[type='range'] {
     -webkit-appearance: none;
@@ -199,13 +152,4 @@ input[type='range']::-moz-range-thumb {
     border: 1px solid #999;
     height: 20px;
     width: 20px;
-}
-
-.fa {
-    font-size: 2em;
-    margin: 3px;
-}
-
-.modal-dialog {
-    width: 90%;
 }
