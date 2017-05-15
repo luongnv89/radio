@@ -163,5 +163,12 @@
         "language": 0,
         "category": 2,
         "desc": "Possibly the world\"s coolest radio station, WFMU is the longest running independent 'freeform' station in the US, operating out of Mount Hope in New Jersey, paid for by its listeners (no ads!), with an eclectic slate of shows that offers something for anyone who has ever ventured outside the mainstream, from the French pop (and birdsong) inflections of This is the Modern World with Trouble to the early gospel of Sinner\"s Crossroads. "
+    }, {
+        "url": ["http://www.beatlesradio.com:8000/stream/1/"],
+        "logo": "images/the_beatles.jpg",
+        "name": "The Beatles",
+        "language": 0,
+        "category": 1,
+        "desc": "The Beatles - non stop"
     }
 ]
